@@ -14,6 +14,7 @@
 		7BB71F5529B5E0A400DE5146 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F5429B5E0A400DE5146 /* FirebaseFirestoreSwift */; };
 		7BB71F5729B5E0A400DE5146 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F5629B5E0A400DE5146 /* FirebaseStorage */; };
 		7BB71F5929B5E0A400DE5146 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F5829B5E0A400DE5146 /* FirebaseStorageCombine-Community */; };
+		7BB71F5B29B5FD9F00DE5146 /* LegenddayRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */; };
 		7BFAAA7429AC893F00D9921C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAAA7329AC893F00D9921C /* AppDelegate.swift */; };
 		7BFAAA7629AC893F00D9921C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAAA7529AC893F00D9921C /* SceneDelegate.swift */; };
 		7BFAAA7829AC893F00D9921C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAAA7729AC893F00D9921C /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LegenddayRegular.ttf; sourceTree = "<group>"; };
 		7BFAAA7029AC893F00D9921C /* InstaCloneFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFAAA7329AC893F00D9921C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BFAAA7529AC893F00D9921C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				7BFAAA7529AC893F00D9921C /* SceneDelegate.swift */,
 				7BFAAA7729AC893F00D9921C /* ViewController.swift */,
 				7BFAAA7929AC893F00D9921C /* Main.storyboard */,
+				7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */,
 				7BFAAA7C29AC894100D9921C /* Assets.xcassets */,
 				7BFAAA7E29AC894100D9921C /* LaunchScreen.storyboard */,
 				7BFAAA8129AC894100D9921C /* Info.plist */,
@@ -157,6 +160,7 @@
 				7BFAAA8029AC894100D9921C /* LaunchScreen.storyboard in Resources */,
 				7BFAAA8829AF630C00D9921C /* GoogleService-Info.plist in Resources */,
 				7BFAAA7D29AC894100D9921C /* Assets.xcassets in Resources */,
+				7BB71F5B29B5FD9F00DE5146 /* LegenddayRegular.ttf in Resources */,
 				7BFAAA7B29AC893F00D9921C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
