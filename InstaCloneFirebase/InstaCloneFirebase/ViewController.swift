@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUpClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toSignUpVC", sender: nil)
+        
     }
 }
 

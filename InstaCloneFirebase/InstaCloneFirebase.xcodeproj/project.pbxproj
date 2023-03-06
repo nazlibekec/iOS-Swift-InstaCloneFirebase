@@ -15,6 +15,10 @@
 		7BB71F5729B5E0A400DE5146 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F5629B5E0A400DE5146 /* FirebaseStorage */; };
 		7BB71F5929B5E0A400DE5146 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F5829B5E0A400DE5146 /* FirebaseStorageCombine-Community */; };
 		7BB71F5B29B5FD9F00DE5146 /* LegenddayRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */; };
+		7BB71F5D29B608CB00DE5146 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB71F5C29B608CB00DE5146 /* FeedViewController.swift */; };
+		7BB71F5F29B608E800DE5146 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB71F5E29B608E800DE5146 /* UploadViewController.swift */; };
+		7BB71F6129B6090100DE5146 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB71F6029B6090100DE5146 /* ProfileViewController.swift */; };
+		7BB71F6329B61A3B00DE5146 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB71F6229B61A3B00DE5146 /* SignUpViewController.swift */; };
 		7BFAAA7429AC893F00D9921C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAAA7329AC893F00D9921C /* AppDelegate.swift */; };
 		7BFAAA7629AC893F00D9921C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAAA7529AC893F00D9921C /* SceneDelegate.swift */; };
 		7BFAAA7829AC893F00D9921C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFAAA7729AC893F00D9921C /* ViewController.swift */; };
@@ -26,6 +30,10 @@
 
 /* Begin PBXFileReference section */
 		7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LegenddayRegular.ttf; sourceTree = "<group>"; };
+		7BB71F5C29B608CB00DE5146 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		7BB71F5E29B608E800DE5146 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		7BB71F6029B6090100DE5146 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7BB71F6229B61A3B00DE5146 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7BFAAA7029AC893F00D9921C /* InstaCloneFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFAAA7329AC893F00D9921C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BFAAA7529AC893F00D9921C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 				7BFAAA7329AC893F00D9921C /* AppDelegate.swift */,
 				7BFAAA7529AC893F00D9921C /* SceneDelegate.swift */,
 				7BFAAA7729AC893F00D9921C /* ViewController.swift */,
+				7BB71F6229B61A3B00DE5146 /* SignUpViewController.swift */,
+				7BB71F5C29B608CB00DE5146 /* FeedViewController.swift */,
+				7BB71F5E29B608E800DE5146 /* UploadViewController.swift */,
+				7BB71F6029B6090100DE5146 /* ProfileViewController.swift */,
 				7BFAAA7929AC893F00D9921C /* Main.storyboard */,
 				7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */,
 				7BFAAA7C29AC894100D9921C /* Assets.xcassets */,
@@ -172,8 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB71F6129B6090100DE5146 /* ProfileViewController.swift in Sources */,
+				7BB71F6329B61A3B00DE5146 /* SignUpViewController.swift in Sources */,
 				7BFAAA7829AC893F00D9921C /* ViewController.swift in Sources */,
+				7BB71F5F29B608E800DE5146 /* UploadViewController.swift in Sources */,
 				7BFAAA7429AC893F00D9921C /* AppDelegate.swift in Sources */,
+				7BB71F5D29B608CB00DE5146 /* FeedViewController.swift in Sources */,
 				7BFAAA7629AC893F00D9921C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
