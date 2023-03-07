@@ -20,14 +20,63 @@
                     <view key="view" contentMode="scaleToFill" id="mrO-G6-ZuI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectImage" translatesAutoresizingMaskIntoConstraints="NO" id="6EH-CJ-2dE">
+                                <rect key="frame" x="16" y="95" width="361" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="211" id="Qft-ek-w8m"/>
+                                    <constraint firstAttribute="height" constant="211" id="UCb-u3-8pC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="pEI-4Y-tBY"/>
+                                    <constraint firstAttribute="width" constant="361" id="wcq-kt-Nlg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zji-Dq-RaY">
+                                <rect key="frame" x="16" y="453" width="361" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gHn-vd-Gn7"/>
+                                </constraints>
+                                <color key="tintColor" red="0.48235297199999999" green="0.73333334920000004" blue="0.90196073060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Kaydet"/>
+                                <connections>
+                                    <action selector="signInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LzA-rH-CC6"/>
+                                    <action selector="uploadClicked:" destination="WOa-Wq-ITW" eventType="touchUpInside" id="3Nb-D1-8O8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Açıklama" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WtD-n0-mOs">
+                                <rect key="frame" x="16" y="328" width="361" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="Hr8-Mu-mA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="83N-Gf-PTB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WtD-n0-mOs" firstAttribute="leading" secondItem="zji-Dq-RaY" secondAttribute="leading" id="7C8-t9-XCN"/>
+                            <constraint firstItem="WtD-n0-mOs" firstAttribute="top" secondItem="6EH-CJ-2dE" secondAttribute="bottom" constant="22" id="O2a-Ka-ggu"/>
+                            <constraint firstItem="6EH-CJ-2dE" firstAttribute="leading" secondItem="WtD-n0-mOs" secondAttribute="leading" id="QGL-fs-7VR"/>
+                            <constraint firstItem="6EH-CJ-2dE" firstAttribute="leading" secondItem="mrO-G6-ZuI" secondAttribute="leadingMargin" id="WGe-fu-8KF"/>
+                            <constraint firstItem="6EH-CJ-2dE" firstAttribute="trailing" secondItem="mrO-G6-ZuI" secondAttribute="trailingMargin" id="a2y-Lp-fWB"/>
+                            <constraint firstItem="6EH-CJ-2dE" firstAttribute="top" secondItem="83N-Gf-PTB" secondAttribute="top" constant="36" id="cxW-mE-y1l"/>
+                            <constraint firstItem="6EH-CJ-2dE" firstAttribute="trailing" secondItem="WtD-n0-mOs" secondAttribute="trailing" id="hkS-eH-GiF"/>
+                            <constraint firstItem="WtD-n0-mOs" firstAttribute="trailing" secondItem="zji-Dq-RaY" secondAttribute="trailing" id="iPb-lc-V34"/>
+                            <constraint firstItem="83N-Gf-PTB" firstAttribute="bottom" secondItem="zji-Dq-RaY" secondAttribute="bottom" constant="266" id="pqB-IO-S7d"/>
+                            <constraint firstItem="zji-Dq-RaY" firstAttribute="top" secondItem="WtD-n0-mOs" secondAttribute="bottom" constant="24" id="xsf-Kf-TOc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="plus.rectangle.fill" catalog="system" id="bEe-1h-Jvq"/>
+                    <connections>
+                        <outlet property="commentText" destination="WtD-n0-mOs" id="2yA-5E-3q1"/>
+                        <outlet property="imageView" destination="6EH-CJ-2dE" id="9QR-HS-74Q"/>
+                        <outlet property="uploadButton" destination="zji-Dq-RaY" id="cU7-Cc-NXh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sj-cJ-gPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-585" y="236"/>
+            <point key="canvasLocation" x="-585.49618320610682" y="235.91549295774649"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="MzL-S6-uMV">
@@ -286,6 +335,7 @@
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="selectImage" width="200" height="200"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
