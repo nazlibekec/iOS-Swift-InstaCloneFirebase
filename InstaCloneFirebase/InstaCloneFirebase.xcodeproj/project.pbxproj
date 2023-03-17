@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7FC0D229C35E14001B957F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FC0D129C35E14001B957F /* FeedCell.swift */; };
 		7BB71F4D29B5E0A400DE5146 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F4C29B5E0A400DE5146 /* FirebaseAnalytics */; };
 		7BB71F4F29B5E0A400DE5146 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F4E29B5E0A400DE5146 /* FirebaseAuth */; };
 		7BB71F5129B5E0A400DE5146 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7BB71F5029B5E0A400DE5146 /* FirebaseFirestore */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B7FC0D129C35E14001B957F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LegenddayRegular.ttf; sourceTree = "<group>"; };
 		7BB71F5C29B608CB00DE5146 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7BB71F5E29B608E800DE5146 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				7BB71F5C29B608CB00DE5146 /* FeedViewController.swift */,
 				7BB71F5E29B608E800DE5146 /* UploadViewController.swift */,
 				7BB71F6029B6090100DE5146 /* ProfileViewController.swift */,
+				7B7FC0D129C35E14001B957F /* FeedCell.swift */,
 				7BFAAA7929AC893F00D9921C /* Main.storyboard */,
 				7BB71F5A29B5FD9F00DE5146 /* LegenddayRegular.ttf */,
 				7BFAAA7C29AC894100D9921C /* Assets.xcassets */,
@@ -189,6 +192,7 @@
 				7BFAAA7829AC893F00D9921C /* ViewController.swift in Sources */,
 				7BB71F5F29B608E800DE5146 /* UploadViewController.swift in Sources */,
 				7BFAAA7429AC893F00D9921C /* AppDelegate.swift in Sources */,
+				7B7FC0D229C35E14001B957F /* FeedCell.swift in Sources */,
 				7BB71F5D29B608CB00DE5146 /* FeedViewController.swift in Sources */,
 				7BFAAA7629AC893F00D9921C /* SceneDelegate.swift in Sources */,
 			);
