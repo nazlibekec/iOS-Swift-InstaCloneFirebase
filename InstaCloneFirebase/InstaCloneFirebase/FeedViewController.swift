@@ -15,6 +15,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var userCommentArray = [String] ()
     var likeArray = [Int]()
     var userImageArray = [String]()
+    var documentIdArray = [String]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -30,7 +31,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func getDataFromFirestore() {
         let fireStoreDatabase = Firestore.firestore()
-        fireStoreDatabase.collection("Posts").addSnapshotListener { snapshot, error in
+        fireStoreDatabase.collection("Posts").order(by: "date", descending: true).addSnapshotListener { snapshot, error in
             if error != nil {
                 print(error?.localizedDescription)
             } else {
@@ -44,7 +45,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     
                     for document in snapshot!.documents {
                         let documentID = document.documentID
-                        print(documentID)
+                        self.documentIdArray.append(documentID)
                         
                         if let postedBy = document.get("postedBy") as? String {
                             self.userEmailArray.append(postedBy)
@@ -79,6 +80,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.commentLabel.text = userCommentArray[indexPath.row]
         cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
         cell.profileImageView.image = UIImage(named: "profile")
+        cell.documentIdLabel.text = documentIdArray[indexPath.row]
         return cell
         
     }
